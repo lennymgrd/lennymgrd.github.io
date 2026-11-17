@@ -3,109 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lenny Mongrandi, portfolio</title>
-  <meta name="description" content="Lenny Mongrandi, étudiant en 3e année de BUT Informatique à l'IUT Nice Côte d'Azur, en alternance. Projets et compétences.">
-  <meta property="og:title" content="Lenny Mongrandi, portfolio">
+  <title>Lenny Mongrandi</title>
+  <meta name="description" content="Portfolio de Lenny Mongrandi, étudiant en 3e année de BUT Informatique à l'IUT Nice Côte d'Azur, en alternance (2026-2027).">
+  <meta property="og:title" content="Lenny Mongrandi">
   <meta property="og:description" content="Étudiant en BUT 3 Informatique à l'IUT Nice Côte d'Azur, en alternance (2026-2027).">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lennymgrd.github.io/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23e5322d' text-anchor='middle'>LM</text></svg>">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%23111'/><circle cx='16' cy='16' r='6' fill='%23e2382c'/><circle cx='16' cy='16' r='1.5' fill='%23111'/></svg>">
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('anim');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
-    <nav class="wrap nav">
-      <a class="brand" href="#">LM</a>
-      <ul>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- Barre de transport -->
+  <header class="transport">
+    <a class="tp-logo" href="#intro" aria-label="Retour au début"><i class="rec"></i>LM</a>
+    <div class="tp-main">
+      <span class="tp-play" aria-hidden="true"><i></i><i></i></span>
+      <span class="tp-time">00:00</span>
+      <div class="tp-bar">
+        <div class="tp-fill"></div>
+        <button class="tp-mark" data-target="#intro">Intro</button>
+        <button class="tp-mark" data-target="#paroles">Couplet</button>
+        <button class="tp-mark" data-target="#projets">Projets</button>
+        <button class="tp-mark" data-target="#console">Console</button>
+        <button class="tp-mark" data-target="#pads">Pads</button>
+        <button class="tp-mark" data-target="#rappel">Rappel</button>
+      </div>
+      <span class="tp-total">03:30</span>
+    </div>
+    <div class="tp-right">
+      <span class="tp-bpm">&#9833; = 120</span>
+      <a class="tp-gh" href="https://github.com/lennymgrd" target="_blank" rel="noopener">GitHub</a>
+    </div>
   </header>
 
   <main>
-    <section class="hero wrap">
-      <p class="kicker">Portfolio</p>
-      <h1>Lenny Mongrandi</h1>
-      <p class="lead">Étudiant en 3e année de BUT Informatique à l'IUT Nice Côte d'Azur, en alternance (2026-2027).</p>
-      <div class="actions">
-        <a class="btn primary" href="#projets">Voir les projets</a>
-        <a class="btn" href="https://github.com/lennymgrd" target="_blank" rel="noopener">GitHub</a>
+
+    <!-- Intro : le disque -->
+    <section id="intro">
+      <div class="eq" aria-hidden="true"></div>
+
+      <div class="hero-text">
+        <p class="kicker">Portfolio · Face A</p>
+        <h1 class="name" aria-label="Lenny Mongrandi">
+          <span class="line" aria-hidden="true">Lenny</span>
+          <span class="line red" aria-hidden="true">Mongrandi</span>
+        </h1>
+        <ul class="hero-sub">
+          <li><span class="r">BUT 3 Informatique</span></li>
+          <li><span class="r">IUT Nice Côte d'Azur</span></li>
+          <li><span class="r">En alternance, 2026-2027</span></li>
+        </ul>
+      </div>
+
+      <div class="deck-col">
+        <div class="deck">
+          <div class="vinyl">
+            <div class="disc">
+              <div class="label"><b>LM</b><small>33 &#8531; tours</small><i></i></div>
+            </div>
+          </div>
+          <div class="sleeve">
+            <span class="sl-top">Lenny Mongrandi</span>
+            <span class="sl-big">LM</span>
+            <span class="sl-bottom">Face A</span>
+            <span class="sticker">Alternance<br>2026-27</span>
+          </div>
+          <div class="arm" aria-hidden="true"><i class="pivot"></i><i class="rod"></i><i class="head"></i></div>
+        </div>
+      </div>
+
+      <p class="scroll-hint">Faites défiler pour poser l'aiguille <span>&darr;</span></p>
+    </section>
+
+    <!-- Couplet : à propos -->
+    <section id="paroles">
+      <div class="lyrics-wrap">
+        <p class="kicker">Couplet 1 · À propos</p>
+        <p class="lyrics">Je suis en troisième année de BUT Informatique à l'IUT Nice Côte d'Azur, en alternance pour 2026-2027. J'ai écrit une simulation de foule en Python, des scènes 3D en JavaScript et une application web en PHP. La suite se joue en dessous.</p>
+        <span class="ball" aria-hidden="true"></span>
       </div>
     </section>
 
-    <section id="projets" class="wrap section">
-      <h2><span>01</span> Projets</h2>
+    <!-- Bandeaux -->
+    <div class="bands" aria-hidden="true">
+      <div class="band"><div class="band-inner">
+        <span>Python</span><i>&#9834;</i><span>Java</span><i>&#9834;</i><span>JavaScript</span><i>&#9834;</i><span>PHP</span><i>&#9834;</i><span>C#</span><i>&#9834;</i><span>SQL</span><i>&#9834;</i><span>Spring Boot</span><i>&#9834;</i><span>Three.js</span><i>&#9834;</i>
+        <span>Python</span><i>&#9834;</i><span>Java</span><i>&#9834;</i><span>JavaScript</span><i>&#9834;</i><span>PHP</span><i>&#9834;</i><span>C#</span><i>&#9834;</i><span>SQL</span><i>&#9834;</i><span>Spring Boot</span><i>&#9834;</i><span>Three.js</span><i>&#9834;</i>
+      </div></div>
+      <div class="band alt"><div class="band-inner">
+        <span>Git</span><i>&#9834;</i><span>Docker</span><i>&#9834;</i><span>GitLab</span><i>&#9834;</i><span>NumPy</span><i>&#9834;</i><span>PostgreSQL</span><i>&#9834;</i><span>Cesium</span><i>&#9834;</i><span>Maven</span><i>&#9834;</i><span>GitHub Actions</span><i>&#9834;</i>
+        <span>Git</span><i>&#9834;</i><span>Docker</span><i>&#9834;</i><span>GitLab</span><i>&#9834;</i><span>NumPy</span><i>&#9834;</i><span>PostgreSQL</span><i>&#9834;</i><span>Cesium</span><i>&#9834;</i><span>Maven</span><i>&#9834;</i><span>GitHub Actions</span><i>&#9834;</i>
+      </div></div>
+    </div>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>ViscoCrowd</h3>
-          <span class="tag">Public</span>
-        </div>
-        <p class="meta">R5.12 Modélisation mathématique · projet à trois</p>
-        <p>Simulation de l'évacuation d'une piscine couverte en panique. La foule sort de l'eau, traverse un carrelage mouillé puis passe par une seule porte. On mesure ce que ce trajet change sur le débit en fonction de la densité.</p>
-        <p>Le moteur est écrit en Python avec NumPy et SciPy, sans moteur physique ni code de simulation de foule tout prêt. J'ai surtout travaillé sur l'outillage des campagnes : reprise entre simulations, mesures de performances et diagnostic des projections en échec.</p>
-        <ul class="chips"><li>Python</li><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Docker</li><li>LaTeX</li></ul>
-        <a class="link" href="https://github.com/ViscoCrowd/ViscoCrowd-simulation" target="_blank" rel="noopener">Voir le dépôt</a>
-      </article>
+    <!-- Projets : pistes -->
+    <section id="projets">
+      <div class="playhead" aria-hidden="true"></div>
+      <div class="lane-track">
 
-      <article class="project">
-        <div class="project-head">
-          <h3>Initiation au multimédia</h3>
-          <span class="tag">Public</span>
+        <div class="lane-title">
+          <p class="kicker">Face A · 3 pistes</p>
+          <h2>Projets</h2>
+          <p class="lane-note">La tête de lecture rouge lit chaque projet pendant que vous faites défiler.</p>
         </div>
-        <p class="meta">R5.06 · TD</p>
-        <p>Mes TD du module R5.06 : cartographie, 3D avec Three.js, géolocalisation, et Flight Explorer 3D, une application construite avec Cesium.</p>
-        <ul class="chips"><li>JavaScript</li><li>Three.js</li><li>Cesium</li><li>HTML</li><li>CSS</li></ul>
-        <a class="link" href="https://github.com/lennymgrd/r506-initiation-multimedia" target="_blank" rel="noopener">Voir le dépôt</a>
-      </article>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>Gestion d'appels</h3>
-          <span class="tag muted">Dépôt privé</span>
-        </div>
-        <p class="meta">Projet pédagogique</p>
-        <p>Une application web d'enregistrement et de statistiques d'appels pour un secrétariat. Chaque appel est rattaché à une entreprise, un appelant et un motif. L'application gère plusieurs rôles d'utilisateurs et exporte les appels en CSV.</p>
-        <ul class="chips"><li>PHP</li><li>MySQL / MariaDB</li><li>JavaScript</li><li>Apache</li><li>Docker</li></ul>
-        <p class="note">Code disponible sur demande.</p>
-      </article>
+        <article class="clip" style="--c: var(--red)">
+          <header class="clip-bar"><span>Piste 01 · R5.12</span><span>Public</span></header>
+          <div class="wave" data-seed="7"></div>
+          <div class="clip-body">
+            <span class="num" aria-hidden="true">01</span>
+            <h3>ViscoCrowd</h3>
+            <p class="meta">Modélisation mathématique · projet à trois</p>
+            <p>Simulation de l'évacuation d'une piscine couverte en panique. La foule sort de l'eau, traverse un carrelage mouillé puis passe par une seule porte. On mesure ce que ce trajet change sur le débit en fonction de la densité.</p>
+            <p>Le moteur est écrit en Python avec NumPy et SciPy, sans moteur physique ni code de simulation de foule tout prêt. J'ai surtout travaillé sur l'outillage des campagnes : reprise entre simulations, mesures de performances et diagnostic des projections en échec.</p>
+            <ul class="tags"><li>Python</li><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Docker</li><li>LaTeX</li></ul>
+            <a class="clip-link" href="https://github.com/ViscoCrowd/ViscoCrowd-simulation" target="_blank" rel="noopener">Voir le dépôt</a>
+          </div>
+        </article>
+
+        <article class="clip" style="--c: var(--paper)">
+          <header class="clip-bar"><span>Piste 02 · R5.06</span><span>Public</span></header>
+          <div class="wave" data-seed="13"></div>
+          <div class="clip-body">
+            <span class="num" aria-hidden="true">02</span>
+            <h3>Initiation au multimédia</h3>
+            <p class="meta">TD du module R5.06</p>
+            <p>Mes TD du module R5.06 : cartographie, 3D avec Three.js, géolocalisation, et Flight Explorer 3D, une application construite avec Cesium.</p>
+            <ul class="tags"><li>JavaScript</li><li>Three.js</li><li>Cesium</li><li>HTML</li><li>CSS</li></ul>
+            <a class="clip-link" href="https://github.com/lennymgrd/r506-initiation-multimedia" target="_blank" rel="noopener">Voir le dépôt</a>
+          </div>
+        </article>
+
+        <article class="clip" style="--c: var(--steel)">
+          <header class="clip-bar"><span>Piste 03 · Projet pédagogique</span><span>Privé</span></header>
+          <div class="wave" data-seed="21"></div>
+          <div class="clip-body">
+            <span class="num" aria-hidden="true">03</span>
+            <h3>Gestion d'appels</h3>
+            <p class="meta">Application web pour un secrétariat</p>
+            <p>Une application web d'enregistrement et de statistiques d'appels. Chaque appel est rattaché à une entreprise, un appelant et un motif. L'application gère plusieurs rôles d'utilisateurs et exporte les appels en CSV.</p>
+            <ul class="tags"><li>PHP</li><li>MySQL / MariaDB</li><li>JavaScript</li><li>Apache</li><li>Docker</li></ul>
+            <p class="clip-note">Dépôt privé, code disponible sur demande.</p>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section id="competences" class="wrap section">
-      <h2><span>02</span> Compétences</h2>
-      <div class="skills">
-        <div>
-          <h3>Langages</h3>
-          <ul class="chips"><li>C</li><li>C#</li><li>Python</li><li>Java</li><li>JavaScript</li><li>PHP</li><li>HTML</li><li>CSS</li><li>SQL</li></ul>
+    <!-- Compétences : table de mixage -->
+    <section id="console">
+      <div class="sec-head reveal">
+        <p class="kicker">Table de mixage · Compétences</p>
+        <h2>La console</h2>
+      </div>
+
+      <div class="desk">
+        <div class="strip" data-level="0.92" style="--lvl: 0.92">
+          <div class="lcd">Langages</div>
+          <div class="knob-row"><span class="knob"></span><small>Gain</small></div>
+          <ul class="channel-list">
+            <li><i class="led"></i><img class="logo" src="assets/logos/c.svg" alt="" width="22" height="22">C</li><li><i class="led"></i><img class="logo" src="assets/logos/csharp.svg" alt="" width="22" height="22">C#</li><li><i class="led"></i><img class="logo" src="assets/logos/python.svg" alt="" width="22" height="22">Python</li><li><i class="led"></i><img class="logo" src="assets/logos/java.svg" alt="" width="22" height="22">Java</li><li><i class="led"></i><img class="logo" src="assets/logos/javascript.svg" alt="" width="22" height="22">JavaScript</li><li><i class="led"></i><img class="logo" src="assets/logos/php.svg" alt="" width="22" height="22">PHP</li><li><i class="led"></i><img class="logo" src="assets/logos/html5.svg" alt="" width="22" height="22">HTML</li><li><i class="led"></i><img class="logo" src="assets/logos/css3.svg" alt="" width="22" height="22">CSS</li><li><i class="led"></i><span class="logo logo-txt" aria-hidden="true">SQL</span>SQL</li>
+          </ul>
+          <div class="fader-zone"><div class="vu"></div><div class="fader"><i class="slot"></i><i class="cap"></i></div></div>
+          <div class="ch">CH 1 · 9 pistes</div>
         </div>
-        <div>
-          <h3>Bases de données</h3>
-          <ul class="chips"><li>MySQL</li><li>MariaDB</li><li>PostgreSQL</li><li>pgAdmin</li></ul>
+
+        <div class="strip" data-level="0.55" style="--lvl: 0.55">
+          <div class="lcd">Bases de données</div>
+          <div class="knob-row"><span class="knob"></span><small>Gain</small></div>
+          <ul class="channel-list">
+            <li><i class="led"></i><img class="logo" src="assets/logos/mysql.svg" alt="" width="22" height="22">MySQL</li><li><i class="led"></i><img class="logo" src="assets/logos/mariadb.svg" alt="" width="22" height="22">MariaDB</li><li><i class="led"></i><img class="logo" src="assets/logos/postgresql.svg" alt="" width="22" height="22">PostgreSQL</li><li><i class="led"></i><span class="logo logo-txt" aria-hidden="true">pgA</span>pgAdmin</li>
+          </ul>
+          <div class="fader-zone"><div class="vu"></div><div class="fader"><i class="slot"></i><i class="cap"></i></div></div>
+          <div class="ch">CH 2 · 4 pistes</div>
         </div>
-        <div>
-          <h3>Frameworks et bibliothèques</h3>
-          <ul class="chips"><li>Spring Boot</li><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Three.js</li><li>Cesium</li></ul>
+
+        <div class="strip" data-level="0.7" style="--lvl: 0.7">
+          <div class="lcd">Frameworks</div>
+          <div class="knob-row"><span class="knob"></span><small>Gain</small></div>
+          <ul class="channel-list">
+            <li><i class="led"></i><img class="logo" src="assets/logos/spring.svg" alt="" width="22" height="22">Spring Boot</li><li><i class="led"></i><img class="logo" src="assets/logos/numpy.svg" alt="" width="22" height="22">NumPy</li><li><i class="led"></i><span class="logo logo-txt" aria-hidden="true">Sci</span>SciPy</li><li><i class="led"></i><img class="logo" src="assets/logos/matplotlib.svg" alt="" width="22" height="22">Matplotlib</li><li><i class="led"></i><img class="logo" src="assets/logos/threejs.svg" alt="" width="22" height="22">Three.js</li><li><i class="led"></i><span class="logo logo-txt" aria-hidden="true">Ces</span>Cesium</li>
+          </ul>
+          <div class="fader-zone"><div class="vu"></div><div class="fader"><i class="slot"></i><i class="cap"></i></div></div>
+          <div class="ch">CH 3 · 6 pistes</div>
         </div>
-        <div>
-          <h3>Outils</h3>
-          <ul class="chips"><li>Git</li><li>GitHub</li><li>GitLab</li><li>GitHub Actions</li><li>Docker</li><li>Maven</li><li>IntelliJ IDEA</li><li>VS Code</li></ul>
+
+        <div class="strip" data-level="0.85" style="--lvl: 0.85">
+          <div class="lcd">Outils</div>
+          <div class="knob-row"><span class="knob"></span><small>Gain</small></div>
+          <ul class="channel-list">
+            <li><i class="led"></i><img class="logo" src="assets/logos/git.svg" alt="" width="22" height="22">Git</li><li><i class="led"></i><img class="logo" src="assets/logos/github.svg" alt="" width="22" height="22">GitHub</li><li><i class="led"></i><img class="logo" src="assets/logos/gitlab.svg" alt="" width="22" height="22">GitLab</li><li><i class="led"></i><img class="logo" src="assets/logos/githubactions.svg" alt="" width="22" height="22">GitHub Actions</li><li><i class="led"></i><img class="logo" src="assets/logos/docker.svg" alt="" width="22" height="22">Docker</li><li><i class="led"></i><img class="logo" src="assets/logos/maven.svg" alt="" width="22" height="22">Maven</li><li><i class="led"></i><img class="logo" src="assets/logos/intellij.svg" alt="" width="22" height="22">IntelliJ IDEA</li><li><i class="led"></i><img class="logo" src="assets/logos/vscode.svg" alt="" width="22" height="22">VS Code</li>
+          </ul>
+          <div class="fader-zone"><div class="vu"></div><div class="fader"><i class="slot"></i><i class="cap"></i></div></div>
+          <div class="ch">CH 4 · 8 pistes</div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="wrap section">
-      <h2><span>03</span> Contact</h2>
-      <p>Le plus simple pour me joindre ou voir mon code :</p>
-      <div class="actions">
-        <a class="btn primary" href="https://github.com/lennymgrd" target="_blank" rel="noopener">github.com/lennymgrd</a>
+    <!-- Interlude : pads -->
+    <section id="pads">
+      <div class="pads-text reveal">
+        <p class="kicker">Interlude</p>
+        <h2>À vous de jouer</h2>
+        <p>Cliquez sur les pads ou utilisez les touches du clavier. Les huit sons sont synthétisés dans le navigateur avec la Web Audio API, sans aucun fichier audio.</p>
+        <button class="beat-btn" type="button"><span class="ico"></span><span class="txt">Lancer le beat</span></button>
+        <div class="seq" aria-hidden="true"></div>
+      </div>
+      <div class="pads">
+        <button class="pad" data-sound="kick" data-code="KeyA" type="button"><span>Grosse caisse</span><kbd>Q</kbd></button>
+        <button class="pad" data-sound="snare" data-code="KeyS" type="button"><span>Caisse claire</span><kbd>S</kbd></button>
+        <button class="pad" data-sound="hat" data-code="KeyD" type="button"><span>Charley</span><kbd>D</kbd></button>
+        <button class="pad" data-sound="open" data-code="KeyF" type="button"><span>Charley ouvert</span><kbd>F</kbd></button>
+        <button class="pad" data-sound="clap" data-code="KeyG" type="button"><span>Clap</span><kbd>G</kbd></button>
+        <button class="pad" data-sound="tomLo" data-code="KeyH" type="button"><span>Tom basse</span><kbd>H</kbd></button>
+        <button class="pad" data-sound="tomHi" data-code="KeyJ" type="button"><span>Tom aigu</span><kbd>J</kbd></button>
+        <button class="pad" data-sound="bell" data-code="KeyK" type="button"><span>Cloche</span><kbd>K</kbd></button>
+      </div>
+    </section>
+
+    <!-- Rappel : contact -->
+    <section id="rappel">
+      <div class="sec-head reveal">
+        <p class="kicker">Rappel · Contact</p>
+        <h2>Un dernier titre</h2>
+      </div>
+      <div class="ticket">
+        <div class="t-main">
+          <p class="t-kicker">Entrée · Saison 2026-2027</p>
+          <p class="t-name">Lenny Mongrandi</p>
+          <dl class="t-info">
+            <div><dt>Programme</dt><dd>BUT 3 Informatique</dd></div>
+            <div><dt>Lieu</dt><dd>IUT Nice Côte d'Azur</dd></div>
+            <div><dt>Formule</dt><dd>Alternance</dd></div>
+          </dl>
+          <a class="t-btn" href="https://github.com/lennymgrd" target="_blank" rel="noopener">github.com/lennymgrd</a>
+        </div>
+        <div class="stub">
+          <span class="stub-k">Rappel</span>
+          <span class="stub-n">N° 0001</span>
+          <span class="barcode" aria-hidden="true"></span>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="wrap foot">
-    <p>Lenny Mongrandi · 2026</p>
+  <footer class="foot">
+    <p>Fin de la face A · Lenny Mongrandi, 2026</p>
+    <button class="rewind" type="button">&#9198; Rembobiner</button>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
